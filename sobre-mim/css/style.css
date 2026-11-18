@@ -1,0 +1,261 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #171717;
+}
+
+/* MENU */
+
+header {
+    background: #15151c;
+    padding: 22px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+span {
+    color: #8b35ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #963cff;
+}
+
+/* INÍCIO */
+
+.inicio {
+    background: #15151c;
+    color: white;
+    min-height: 270px;
+    padding: 45px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.apresentacao h3 {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.apresentacao h1 {
+    font-size: 45px;
+    margin: 5px 0;
+}
+
+.apresentacao h2 {
+    color: #b7b7c5;
+    font-size: 22px;
+}
+
+.apresentacao p {
+    margin: 15px 0;
+    max-width: 350px;
+    line-height: 1.5;
+}
+
+.botao {
+    display: inline-block;
+    background: linear-gradient(90deg, #7627ed, #a044ff);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.icone {
+    border: 4px solid #9845ff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    margin-right: 5%;
+}
+
+/* SOBRE */
+
+.sobre {
+    padding: 45px 10%;
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+    padding: 40px 10%;
+    text-align: center;
+    background: #f8f8fb;
+}
+
+.lista-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.habilidade {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: white;
+    transition: 0.3s;
+}
+
+.habilidade:hover {
+    transform: translateY(-5px);
+    border-color: #913cff;
+}
+
+.habilidade h3 {
+    color: #842eff;
+    margin-bottom: 10px;
+}
+
+/* PROJETOS */
+
+.projetos {
+    padding: 45px 10%;
+}
+
+.lista-projetos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projeto {
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.projeto:hover {
+    box-shadow: 0 5px 20px #ddd;
+    transform: translateY(-5px);
+}
+
+.projeto h3 {
+    margin-bottom: 12px;
+}
+
+.projeto p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.projeto a {
+    color: #842eff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTATO */
+
+.contato {
+    background: #f1f0f7;
+    text-align: center;
+    padding: 35px 10%;
+}
+
+.redes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #842eff;
+    font-weight: bold;
+}
+
+footer {
+    background: #15151c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .apresentacao h1 {
+        font-size: 35px;
+    }
+
+    .icone {
+        margin: auto;
+    }
+
+    .lista-habilidades,
+    .lista-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+    }
+}
